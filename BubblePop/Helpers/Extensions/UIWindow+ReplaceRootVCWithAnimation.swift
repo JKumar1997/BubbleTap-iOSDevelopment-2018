@@ -16,6 +16,7 @@ public enum SwapRootVCAnimationType
     case dismiss
 }
 
+// Adds the possibility to change the apps root view controller with most of the default animations
 extension UIWindow
 {
     public func swapRootViewControllerWithAnimation(_ newViewController: UIViewController, animationType: SwapRootVCAnimationType, completion: (() -> ())? = nil)

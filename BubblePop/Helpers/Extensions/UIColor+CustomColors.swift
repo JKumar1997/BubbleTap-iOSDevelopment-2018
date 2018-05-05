@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// Adds custom colours to UIColor without the need to subclass and cast it
 extension UIColor
 {
     public static func bp_light_gray() -> UIColor
@@ -32,6 +33,6 @@ extension UIColor
     
     public static func bp_pink() -> UIColor
     {
-        return UIColor(red: 0.67843137254902, green: 0.145098039215686, blue: 0.372549019607843, alpha: 1.0)
+        return UIColor(red: 1, green: 0.4392156863, blue: 0.5764705882, alpha: 1.0)
     }
 }

@@ -12,6 +12,8 @@ class GameViewController: UIViewController, GameStateDelegate
 {
     // MARK: Properties
     
+    static let topBarHeight = 54
+    
     let topBar = UIView()
     let lblScore = UILabel()
     let txtScore = UITextField()
@@ -34,7 +36,7 @@ class GameViewController: UIViewController, GameStateDelegate
         view.addSubview(topBar)
         topBar.snp.makeConstraints { make in
             make.left.top.right.equalToSuperview()
-            make.height.equalTo(54)
+            make.height.equalTo(GameViewController.topBarHeight)
         }
         topBar.backgroundColor = .bp_light_gray()
         

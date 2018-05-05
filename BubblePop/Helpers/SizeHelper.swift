@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Consistent margins make for a consistent design
 class SizeHelper
 {
     public static func verySmallMargin() -> Int

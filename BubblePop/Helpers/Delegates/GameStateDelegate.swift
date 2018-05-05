@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Delegates the display of game state
 protocol GameStateDelegate
 {
     func updateState(time: Int, score: Int)

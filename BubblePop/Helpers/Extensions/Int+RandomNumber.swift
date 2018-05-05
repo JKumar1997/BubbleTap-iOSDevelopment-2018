@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// Adds helpers for generating random Ints
 public extension Int
 {
     // Returns a random Int between min and max, inclusive

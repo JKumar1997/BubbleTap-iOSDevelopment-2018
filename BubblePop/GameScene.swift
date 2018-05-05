@@ -10,7 +10,7 @@ import GameplayKit
 
 class GameScene: SKScene
 {
-    // MARK: Properties
+    // MARK: Properties - Final
     
     var gameStateDelegate: GameStateDelegate? = nil
     
@@ -91,7 +91,7 @@ class GameScene: SKScene
                     
                     score += Int(multipliedScore.rounded())
                     
-                    // Update last popped color for combo bonus
+                    // Update last popped colour for combo bonus
                     lastPoppedColor = bubble.color
                     
                     // Remove the bubble
@@ -138,7 +138,7 @@ class GameScene: SKScene
         }
     }
     
-    func createSingleBubble(retryCount: Int = 5)
+    func createSingleBubble(retryCount: Int = 10)
     {
         // Get random location without extending beyond visible area
         let randX = CGFloat.random(min: 0, max: size.width - 2 * BubbleModel.radius)

@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// Adds helpers for generating random CGFloats
 public extension CGFloat
 {
     // Returns a random CGFloat between 0.0 and 1.0, inclusive

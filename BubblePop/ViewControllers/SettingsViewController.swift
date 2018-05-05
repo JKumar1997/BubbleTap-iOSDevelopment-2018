@@ -32,6 +32,9 @@ class SettingsViewController: BaseViewController
         
         title = "Settings"
         
+        print(view.frame.size.width)
+        print(view.frame.size.height)
+        
         setupView()
     }
     
@@ -95,7 +98,7 @@ class SettingsViewController: BaseViewController
         lblGameTimer.font = UIFont.systemFont(ofSize: UIFont.systemFontSize, weight: .light)
         lblGameTimer.numberOfLines = 0
         lblGameTimer.textAlignment = .center
-        lblGameTimer.text = "By dragging the slider you can set how many seconds the game takes."
+        lblGameTimer.text = "By dragging the slider you can set how many seconds the game takes to complete."
         
         
         // txtMaxBubbleCount
@@ -121,7 +124,7 @@ class SettingsViewController: BaseViewController
         }
         sldMaxBubbleCount.isContinuous = true
         sldMaxBubbleCount.minimumValue = 5
-        sldMaxBubbleCount.maximumValue = 20 // Careful here, as random placement of bubbles can take up to ~3-4 times as much space as perfect placement
+        sldMaxBubbleCount.maximumValue = Float(getMaxBubbleCountForWorstCase())
         sldMaxBubbleCount.value = Float(UserDefaultsHelper.getMaxBubbleCount())
         sldMaxBubbleCount.tintColor = .red
         sldMaxBubbleCount.addTarget(self, action: #selector(sldMaxBubbleCountChanged), for: .valueChanged)
@@ -178,5 +181,23 @@ class SettingsViewController: BaseViewController
     {
         let divided = floatToRound / Float(dividableBy)
         return Int(divided.rounded()) * dividableBy
+    }
+    
+    // Calculates how many bubbles can in any case be displayed.
+    // This is not a precise calculation, but rather a very pessimistic estimate.
+    // Being pessimistic helps with random placement of bubbles
+    func getMaxBubbleCountForWorstCase() -> Int
+    {
+        let diameter = 2 * BubbleModel.radius
+        
+        let width = view.frame.size.width
+        let height = view.frame.size.height - CGFloat(GameViewController.topBarHeight) // topBar cannot be populated by bubbles
+        
+        // Worst case for a row/column is best case of row/column - 1
+        // Worst case for a 2d grid is still better, but we're not looking for the optimal solution here
+        let rows = Int(height / diameter) - 1
+        let columns = Int(width / diameter) - 1
+        
+        return rows * columns
     }
 }

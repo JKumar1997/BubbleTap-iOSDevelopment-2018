@@ -21,14 +21,12 @@
 		25A5125F209B5EC3004264BF /* UIImage+FromSolidColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A5125E209B5EC3004264BF /* UIImage+FromSolidColor.swift */; };
 		25A51261209B6011004264BF /* SizeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A51260209B6011004264BF /* SizeHelper.swift */; };
 		25A51263209B6204004264BF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A51262209B6204004264BF /* BaseViewController.swift */; };
-		25A51265209B6595004264BF /* UsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A51264209B6595004264BF /* UsernameViewController.swift */; };
 		25A51267209B6A6B004264BF /* UIWindow+ReplaceRootVCWithAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A51266209B6A6B004264BF /* UIWindow+ReplaceRootVCWithAnimation.swift */; };
 		25A51269209B77E9004264BF /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A51268209B77E9004264BF /* UserDefaultsHelper.swift */; };
 		25A5126C209B895D004264BF /* BubbleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A5126B209B895D004264BF /* BubbleModel.swift */; };
 		25A5126E209B8966004264BF /* HighScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A5126D209B8966004264BF /* HighScoreModel.swift */; };
 		25A51270209B8D15004264BF /* CGFloat+RandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A5126F209B8D15004264BF /* CGFloat+RandomNumber.swift */; };
 		25A51272209BA949004264BF /* Int+RandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A51271209BA949004264BF /* Int+RandomNumber.swift */; };
-		25A51274209BAC0C004264BF /* Array+RandomElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A51273209BAC0C004264BF /* Array+RandomElement.swift */; };
 		FAE4187205C8E467A9137602 /* Pods_BubblePop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E3C9B37D526F40639D061A /* Pods_BubblePop.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,14 +48,12 @@
 		25A5125E209B5EC3004264BF /* UIImage+FromSolidColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+FromSolidColor.swift"; sourceTree = "<group>"; };
 		25A51260209B6011004264BF /* SizeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeHelper.swift; sourceTree = "<group>"; };
 		25A51262209B6204004264BF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		25A51264209B6595004264BF /* UsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameViewController.swift; sourceTree = "<group>"; };
 		25A51266209B6A6B004264BF /* UIWindow+ReplaceRootVCWithAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+ReplaceRootVCWithAnimation.swift"; sourceTree = "<group>"; };
 		25A51268209B77E9004264BF /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		25A5126B209B895D004264BF /* BubbleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleModel.swift; sourceTree = "<group>"; };
 		25A5126D209B8966004264BF /* HighScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreModel.swift; sourceTree = "<group>"; };
 		25A5126F209B8D15004264BF /* CGFloat+RandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+RandomNumber.swift"; sourceTree = "<group>"; };
 		25A51271209BA949004264BF /* Int+RandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+RandomNumber.swift"; sourceTree = "<group>"; };
-		25A51273209BAC0C004264BF /* Array+RandomElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+RandomElement.swift"; sourceTree = "<group>"; };
 		5C2B2EEAC8C4989A6A8640EC /* Pods-BubblePop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubblePop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BubblePop/Pods-BubblePop.debug.xcconfig"; sourceTree = "<group>"; };
 		A6E3C9B37D526F40639D061A /* Pods_BubblePop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BubblePop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -124,7 +120,6 @@
 				256268AD209B530700BD870B /* HighScoreViewController.swift */,
 				256268A7209B4EF000BD870B /* MenuViewController.swift */,
 				256268AB209B508D00BD870B /* SettingsViewController.swift */,
-				25A51264209B6595004264BF /* UsernameViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -148,7 +143,6 @@
 				25A51266209B6A6B004264BF /* UIWindow+ReplaceRootVCWithAnimation.swift */,
 				25A5126F209B8D15004264BF /* CGFloat+RandomNumber.swift */,
 				25A51271209BA949004264BF /* Int+RandomNumber.swift */,
-				25A51273209BAC0C004264BF /* Array+RandomElement.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -321,8 +315,6 @@
 				25A5125D209B5EB3004264BF /* UIColor+CustomColors.swift in Sources */,
 				25A51270209B8D15004264BF /* CGFloat+RandomNumber.swift in Sources */,
 				256268AC209B508D00BD870B /* SettingsViewController.swift in Sources */,
-				25A51274209BAC0C004264BF /* Array+RandomElement.swift in Sources */,
-				25A51265209B6595004264BF /* UsernameViewController.swift in Sources */,
 				25A5126C209B895D004264BF /* BubbleModel.swift in Sources */,
 				256268A8209B4EF000BD870B /* MenuViewController.swift in Sources */,
 				256268AE209B530700BD870B /* HighScoreViewController.swift in Sources */,
@@ -465,7 +457,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZT8DW74932;
 				INFOPLIST_FILE = BubblePop/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,7 +476,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZT8DW74932;
 				INFOPLIST_FILE = BubblePop/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
